@@ -13,7 +13,7 @@ public class ColaWeatherOpenHelper extends SQLiteOpenHelper {
 
 	public static final String CREATE_CITY = "create table City("
 			+ "id integer primary key autoincrement," + "city_name text,"
-			+ "city code text," + "province_id integer)";
+			+ "city_code text," + "province_id integer)";
 
 	public static final String CREATE_COUNTY = "create table County("
 			+ "id integer primary key autoincrement," + "county_name text,"
@@ -38,6 +38,7 @@ public class ColaWeatherOpenHelper extends SQLiteOpenHelper {
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		// TODO Auto-generated method stub
 
+		
 	}
 
 }
