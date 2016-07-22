@@ -1,5 +1,6 @@
 package com.colaweather.app.activity;
 
+import com.colaweather.app.service.AutoUpdateService;
 import com.colaweather.app.util.HttpCallbackListener;
 import com.colaweather.app.util.HttpUtil;
 import com.colaweather.app.util.Utility;
@@ -143,6 +144,8 @@ public class WeatherActivity extends Activity implements OnClickListener{
 		weatherInfoLayout.setVisibility(View.VISIBLE);
 		cityNameText.setVisibility(View.VISIBLE);
 
+		Intent intent=new Intent(this,AutoUpdateService.class);
+		startService(intent);
 	}
 
 	@Override
